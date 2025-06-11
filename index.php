@@ -1,4 +1,4 @@
-<?
+<?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST')
 {
   $file = '/tmp/sample-app.log';
@@ -15,16 +15,15 @@ else
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>PHP Application - BallotOnline POC</title>
     <meta name="viewport" content="width=device-width">
-
 </head>
 <body>
     <section class="congratulations">
         <h1>Congratulations!</h1>
-        <p>Your BallotOnline POC PHP Web application is now running in your own dedicated environment in Amazon Web Services App Service!</p>
-        <p>You are running PHP version <?= phpversion() ?></p>
+        <p>Your BallotOnline POC PHP Web application is now running in your own dedicated environment in <strong>Microsoft Azure App Service</strong>!</p>
+        <p>You are running PHP version <?php echo phpversion(); ?></p>
     </section>
 </body>
 </html>
-<? 
-} 
+<?php 
+}
 ?>
